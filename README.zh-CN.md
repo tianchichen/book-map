@@ -23,6 +23,59 @@
 - 比一次性读书笔记更可复用的背景层
 - 比孤立书卡更容易连接进知识网络的中间层
 
+## 快速开始
+
+1. 下载或复制 [SKILL.md](./SKILL.md)。
+2. 在你的本地 skills 目录下新建一个 `book-context-map` 文件夹。
+3. 把 `SKILL.md` 放进这个文件夹里。
+4. 如有需要，重启你的助手客户端。
+5. 在处理书籍笔记时显式调用这个 skill。
+
+示例目录结构：
+
+```text
+.claude/
+  skills/
+    book-context-map/
+      SKILL.md
+```
+
+## 怎么使用
+
+当你想把一本书加入 vault，或者想补强一条已有的 book note 时，就可以调用这个 skill。
+
+示例提示词：
+
+```text
+Use book-context-map to add this book to my vault: The Structure of Scientific Revolutions by Thomas Kuhn.
+```
+
+```text
+Use book-context-map to enrich my existing note on Seeing Like a State.
+Focus on author background, core question, framework, and further reading.
+```
+
+```text
+Use book-context-map to create a lightweight reading context note for Debt: The First 5000 Years.
+```
+
+## 使用前后对比
+
+没有这个 skill 时，一条书籍笔记很容易变成：
+
+- 一段简短摘要
+- 几条摘录
+- 一些松散标签
+- 没有明确阅读路径
+
+有了这个 skill 之后，同一条笔记更可能补出：
+
+- 为什么这本书值得进入
+- 它在回答什么问题
+- 进入之前需要哪些背景
+- 读完之后接什么
+- 它应该挂进哪个更大的主题网络
+
 ## 它会产出什么
 
 这个 skill 默认会帮助生成一个结构化的“书籍上下文”区块，通常包括：
@@ -90,6 +143,12 @@
 - 在正式开始阅读前先建导读层
 - 把一本书挂进既有主题网络
 - 生成前置阅读和延伸阅读路径
+
+## 支持一下
+
+如果这个 skill 对你的工作流有帮助，欢迎给这个仓库点一个 star。
+
+也欢迎反馈、示例和改进建议。
 
 ## 许可证
 

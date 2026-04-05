@@ -33,6 +33,59 @@ The skill builds a structured "book context" section that can include:
 - contrasting or critical perspectives
 - links to related notes already in the vault
 
+## Quick Start
+
+1. Download or copy [SKILL.md](./SKILL.md).
+2. Create a folder named `book-context-map` inside your local skills directory.
+3. Put `SKILL.md` into that folder.
+4. Restart your assistant client if needed.
+5. Ask it to use the skill when working on a book note.
+
+Example local structure:
+
+```text
+.claude/
+  skills/
+    book-context-map/
+      SKILL.md
+```
+
+## How To Use
+
+You can call this skill when you want to add a book into your vault or enrich an existing book note.
+
+Example prompts:
+
+```text
+Use book-context-map to add this book to my vault: The Structure of Scientific Revolutions by Thomas Kuhn.
+```
+
+```text
+Use book-context-map to enrich my existing note on Seeing Like a State.
+Focus on author background, core question, framework, and further reading.
+```
+
+```text
+Use book-context-map to create a lightweight reading context note for Debt: The First 5000 Years.
+```
+
+## Before / After
+
+Without this skill, a book note often ends up as:
+
+- a short summary
+- a few quotes
+- disconnected tags
+- no clear reading path
+
+With this skill, the same note is more likely to include:
+
+- why the book matters
+- what question it answers
+- what background helps before reading it
+- what to read next
+- where it belongs in a larger note network
+
 ## Best Fit
 
 This skill works especially well for:
@@ -85,6 +138,12 @@ The goal is to help the reader quickly understand:
 - build a reading guide before starting a difficult book
 - map a book into an existing theme network
 - generate prerequisite and follow-up reading paths
+
+## Support
+
+If this skill is useful in your workflow, consider starring the repository.
+
+Feedback, examples, and improvements are welcome.
 
 ## License
 
